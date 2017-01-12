@@ -10,4 +10,8 @@ http://www.rabbitmq.com/tutorials/tutorial-one-go.html
 #### install and run rabbitmq with docker ####
 `$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 -p 5672:5672 rabbitmq:3-management`
 
+#### send a new message with the producer ####
+`go run send.go`
 
+#### receice the message with consumer ####
+`go run receive.go`
